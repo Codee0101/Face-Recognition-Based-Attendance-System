@@ -10,7 +10,8 @@ _
 First, make sure you have dlib already installed with Python bindings:
 
   * [How to install dlib from source on macOS or Ubuntu](https://gist.github.com/ageitgey/629d75c1baac34dfa5ca2a1928a7aeaf)
-Rmoving the Nvidia CUDA Library [bug while compiling the dlib library.](https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd)
+
+Removing the Nvidia CUDA Library [bug while compiling the dlib library.](https://medium.com/@ageitgey/build-a-hardware-based-face-recognition-system-for-150-with-the-nvidia-jetson-nano-and-python-a25cb8c891fd)
 
 Cloning the repository
 ```bash
