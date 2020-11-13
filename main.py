@@ -4,10 +4,23 @@ import numpy as np
 import os
 import pandas as pd
 import time
+import platform
 from utils import append_df_to_excel
 
-# Get a reference to webcam #0 (the default one)
-video_capture = cv2.VideoCapture(0)
+## Get a reference to webcam #0 (the default one)
+# To run the code on Nvidia Jetson Nano Developer Kit, the following codes will help
+def running_on_jetson_nano():
+    return platform.machine() == "aarch64"
+
+if running_on_jetson_nano():
+    video_capture = 
+    cv2.VideoCapture(
+        get_jetson_gstreamer_source(), 
+        cv2.CAP_GSTREAMER
+    )
+else:
+    video_capture = cv2.VideoCapture(0)
+    
 
 # Initialize some variables
 known_face_encodings = []
